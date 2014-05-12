@@ -13,3 +13,10 @@ def combo_generator():
 	f = random.choice(flips)
 	t = random.choice(twists)
 	return [k, t, f]
+
+def multi_combos():
+	'''List of combos'''
+	for i in range(10):
+		print combo_generator()
+
+multi_combos()
